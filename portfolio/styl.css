@@ -1,0 +1,330 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Bebas+Neue&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lexend:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Playwrite+IT+Moderna:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ramaraja&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Teko:wght@300..700&display=swap');
+
+body{
+    font-family:  "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: antiquewhite;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+
+}
+/* Header Section */
+.headings{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(79, 79, 79);
+    color:rgb(245, 238, 220);
+    display: flex;
+    flex-wrap: wrap;
+}
+.name{
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 25px;
+    cursor:default;
+}
+.his{
+    color: rgb(221, 168, 83);
+}
+.menu{
+    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+a{
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    color: white;
+    font-size: 20px;
+    padding-left: 60px;
+    transition: transform 0.3s ease-in-out , color 0.3s ease-in-out , text-decoration 0.3s ease-in-out;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover{
+    color:rgb(255, 167, 37);
+    text-decoration:underline;
+    transform: scale(1.1);
+}
+.resume{
+    background-color:white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact{
+    position: relative;
+}
+.contact .tooltip{
+    position: absolute;
+    background-color: gray;
+    color: wheat;
+    opacity: 0;
+    transition: opacity 0.15s;
+    padding:5px;
+    border-radius: 3px;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    right: 10;
+}
+.contact:hover .tooltip{
+    opacity: 1;
+    cursor: default;
+}
+
+/* Main Section */
+.content{
+    margin-top: 80px;
+    padding-top: 150px;
+    padding-left: 150px;
+    line-height: 80px;
+
+}
+.hi{
+    font-size: 60px;
+    font-weight: bold;
+}
+.details{
+    font-size: 60px;
+    font-weight: bold;
+}
+.sathish{
+    color:rgb(255, 167, 37);
+}
+.details1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.mydetail{
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    flex-basis: 400px;
+    line-height: 28px;
+    font-size: 18px;
+}
+.sathis{
+    padding-left:5px;
+    color:rgb(255, 167, 37);
+}
+.hire{
+    background-color: black;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.contact_num{
+    margin-left: 0px;
+}
+.hire:hover{
+    opacity: 0.8;
+}
+.hire:active{
+    transform: scale(0.98); 
+    opacity: 0.2;
+}
+
+.exper{
+    background-color:rgb(255, 167, 37);
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 25px 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+.exper:hover{
+    opacity: 0.8;
+}
+.exper:active{
+    transform: scale(0.95);
+}
+/* footer design */
+
+footer {
+    position: relative ;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color:rgb(79, 79, 79);
+    margin-top: auto;
+}
+.fa-brands ,.fa-solid {
+    padding: 20px;
+    border-radius: 50px;
+}
+.fa-brands:hover ,.fa-solid:hover{
+    color: aqua;
+}
+.socials{
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+.footer .socials a{
+    font-size: 24px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;    
+}
+.footer-links{
+    text-align: center;
+}
+.footer-links:hover{
+    text-decoration: none;
+}
+.footer-bottom{
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .content {
+        padding-left: 50px;
+        line-height: 60px;
+    }
+
+    .mydetail {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    footer
+    {
+        padding: 8px 0;
+    }
+    
+        .socials {
+            font-size: 16px;
+            padding-bottom: 8px;
+        }
+    
+        .fa-brands, .fa-solid {
+            padding: 10px;
+            font-size: 18px;
+        }
+    
+        .footer-links,
+        .footer-bottom p {
+            font-size: 16px;
+        }
+
+    
+}
+
+@media (max-width: 768px) {
+    .headings {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    .name {
+        padding-left: 0;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .menu a{
+        padding: 3px 0;
+        font-size: 16px;
+    }
+
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .hi, .details, .details1 {
+        font-size: 36px;
+        line-height: 1.4;
+    }
+
+    .mydetail {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .hire, .exper {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+    @media (max-width: 768px) {
+        footer {
+            padding: 0px 0;
+
+        }
+    
+        .fa-brands, .fa-solid {
+            padding: 8px;
+            font-size: 16px;
+        }
+    
+        .socials {
+            font-size: 14px;
+            padding-bottom: 5px;
+        
+        }
+    
+        .footer-links a,
+        .footer-bottom p {
+            font-size: 14px;
+        }
+    }
+    
+
+}

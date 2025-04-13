@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill</title>
+    <link rel="stylesheet" href="skill.css">
+    <link rel="icon" href="/images/work.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="headings">
+        <div class="name">
+            SAT<span class="his">HISH</span>
+        </div>
+        <div class="menu">
+            <a class="home" href="/index.html">Home</a>
+            <a class="projects" href="/project.html">Projects</a>
+            <a class="education" href="/education.html">Education</a>
+            <a class="skills" href="/skill.html">skills</a>
+            
+        </div>
+        <div class="contact">
+            <a class="resume" href="/sathesh_Resume.pdf" download>Resume</a>
+            <div class="tooltip">Download Resume</div>
+        </div>
+        
+    </header>
+
+    <main class="skill">
+
+        <div class="skill-content">
+            <div class="html5">
+                <img class="html-img" src="/images/html5.png">
+                <div class="more">More Details</div>
+                <i class="fa-solid fa-arrow-right show-box" data-popup="popup-html"></i>
+            </div>
+        </div>
+
+        <div class="skill-content">
+            <div class="html5">
+                <img class="css-img" src="/images/css-3.png">
+                <div class="more">More Details</div>
+                <i class="fa-solid fa-arrow-right show-box" data-popup="popup-css"></i>
+            </div>
+        </div>
+
+        <div class="skill-content">
+            <div class="html5">
+                <img class="python-img" src="/images/python.png">
+                <div class="more">More Details</div>
+                <i class="fa-solid fa-arrow-right show-box" data-popup="popup-python"></i>
+            </div>
+        </div>
+
+        <div class="skill-content">
+            <div class="html5">
+                <img class="js-img" src="/images/java-script.png">
+                <div class="more">More Details</div>
+                <i class="fa-solid fa-arrow-right show-box" data-popup="popup-js"></i>
+            </div>
+        </div>
+    </main>
+        
+    <!-- popup mesage -->
+    
+    <div class="pop">
+        <div class="popup-box" id="popup-html">
+            <div class="popup-content">
+                <h2>HTML Skill</h2>
+                <div class="popup-left">
+                    <img class="popup-img" src="/images/html5.png">
+                </div>
+                
+                <input class="slider" type="range" value="80" disabled>
+                <span>80%</span>
+                <p>Used for structuring content on the web.</p>
+                <button class="close-btn" aria-label="Close">&times;</button>
+            </div>
+        </div>
+        
+        <div class="popup-box" id="popup-css">
+            <div class="popup-content">
+                <h2>CSS Skill</h2>
+                <div class="popup-left">
+                    <img class="popup-img" src="/images/css-3.png">
+                </div>
+                
+                <input class="slider" type="range" value="70" disabled>
+                <span>70%</span>
+                <p>Used for styling and layout of webpages.</p>
+                <button class="close-btn" aria-label="Close">&times;</button>
+            </div>
+        </div>
+        
+        <div class="popup-box" id="popup-python">
+        <div class="popup-content">
+            <h2>python Skill</h2>
+            <div class="popup-left">
+                <img class="popup-img" src="/images/python.png">
+            </div>
+            
+            <input class="slider" type="range" value="60" disabled>
+            <span>60%</span>
+            <p>Simple is better than complex.</p>
+            <button class="close-btn" aria-label="Close">&times;</button>
+        </div>
+        </div>
+    
+        <div class="popup-box" id="popup-js">
+            <div class="popup-content">
+                <h2>Java Script Skill</h2>
+                <div class="popup-left">
+                    <img class="popup-img" src="/images/java-script.png">
+                </div>
+                
+                <input class="slider" type="range" value="20" disabled>
+                <span>20%</span>
+                <p>Used for more interactive the webpages.</p>
+                <button class="close-btn" aria-label="Close">&times;</button>
+            </div>
+        </div>
+    
+    </div>
+
+    
+    <footer>
+        <div class="socials">
+            <p>Follow us</p>
+            <a class="linke" href="https://www.linkedin.com/in/sathish-m-ba7969259" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/6382468287" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/sathis0310" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="mailto:satheshmurugan03@gmail.com" target="_blank">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="footer-links">
+            <a href="/index.html">Home</a>
+            <a href="/project.html">Projects</a>
+            <a href="/education.html">Education</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 portfolio. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script>
+        document.querySelectorAll('.show-box').forEach(icon => {
+            icon.addEventListener('click', () => {
+                const popupId = icon.getAttribute('data-popup');
+                const popup = document.getElementById(popupId);
+                popup.style.display = 'flex'; // or 'block' if you're not using flex styling
+            });
+        });
+        
+        document.querySelectorAll('.popup-box').forEach(popup => {
+            const closeBtn = popup.querySelector('.close-btn');
+            closeBtn.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+        
+            popup.addEventListener('click', e => {
+                if (e.target === popup) {
+                    popup.style.display = 'none';
+                }
+            });
+        });
+        
+    </script>
+
+</body>
+</html>
